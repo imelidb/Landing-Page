@@ -27,10 +27,6 @@ Este sitio puede ser desplegado en GitHub Pages. Una vez subido a GitHub, habili
 - Portafolio interactivo con proyectos formativos, profesionales y personales.
 - Diseño completamente responsivo para dispositivos móviles.
 
-## 📸 Captura de Pantalla
-
-*(Agrega una captura de pantalla de tu sitio aquí si lo deseas)*
-
 ## 📬 Contacto
 
 Puedes contactar directamente a Imelid Barreto mediante:
