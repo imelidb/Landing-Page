@@ -1,40 +1,43 @@
 
-# Portafolio Web - Imelid Barreto
+# Portafolio Profesional con Asistente Virtual IA
 
-Este es un sitio web personal diseñado para presentar el portafolio profesional de **Imelid Barreto**, Ingeniera en Informática, con experiencia en control fiscal, presupuesto público, sistematización de proyectos y desarrollo impulsado por tecnologías innovadoras.
+Bienvenido a mi landing page personal, una plataforma desarrollada con el objetivo de presentar mi perfil profesional, habilidades, proyectos y ofrecer asistencia personalizada a través de un agente conversacional llamado **Immy**.
 
-## 🌐 Enlace al sitio
+## 🌟 Visión y Valor que Aporta
 
-Este sitio puede ser desplegado en GitHub Pages. Una vez subido a GitHub, habilita GitHub Pages desde la rama principal (`main`) y selecciona `/root` como fuente.
+Esta landing page busca ser más que una simple tarjeta de presentación: representa una plataforma interactiva donde los visitantes pueden conocer mi experiencia profesional, explorar mis proyectos destacados y contactar conmigo de forma directa y dinámica.
 
-## 📁 Estructura de Archivos
-
-- `index.html`: Página principal con secciones de presentación, habilidades, proyectos y contacto.
-- `style.css`: Estilos visuales del sitio con un enfoque profesional y moderno.
-- Imágenes: Referencias externas desde URLs (pueden reemplazarse por locales si se desea).
+Gracias a **Immy**, un asistente IA amigable, los usuarios pueden obtener respuestas inmediatas, recomendaciones y una guía general sobre el contenido de la página. Esto mejora significativamente la experiencia de usuario, fomentando una interacción moderna y accesible.
 
 ## 🛠️ Tecnologías Utilizadas
 
-- HTML5 & CSS3
-- JavaScript (para animaciones interactivas y chatbot)
-- Font Awesome (íconos)
-- Google Fonts (tipografía Poppins)
+### Frontend
+- **HTML5**
+- **CSS3** (con animaciones y diseño responsive)
+- **JavaScript** (para interactividad básica)
 
-## 🤖 Funcionalidades Destacadas
+### Backend
+- No se ha implementado un backend dinámico para esta versión estática.
 
-- Animación digital tipo "Matrix" en el fondo de la sección principal.
-- Chatbot "Immy" con respuestas básicas y activación por voz.
-- Portafolio interactivo con proyectos formativos, profesionales y personales.
-- Diseño completamente responsivo para dispositivos móviles.
+### Base de Datos
+- No aplica en esta versión.
 
-## 📬 Contacto
+### Inteligencia Artificial
+- **Agente Virtual "Immy"** integrado con comportamiento conversacional basado en texto, simulando asistencia personalizada.
 
-Puedes contactar directamente a Imelid Barreto mediante:
+## ⚠️ Limitaciones Actuales
 
-- WhatsApp: [+58 412 9790235](https://api.whatsapp.com/send?phone=584129790235)
-- Instagram: [@imelidbarreto](https://www.instagram.com/imelidbarreto/)
-- X (Twitter): [@imelid_xlsx](https://x.com/imelid_xlsx)
+- El asistente IA **no está conectado a un motor conversacional real** (como OpenAI, Dialogflow o similares), sino que simula interacciones básicas.
+- El sitio funciona de forma estática, por lo que no hay almacenamiento persistente ni funcionalidades de backend.
+
+## 🚀 Mejoras Futuras
+
+- Integrar un chatbot real con IA (API de OpenAI, Gemini, etc.).
+- Implementar backend con **Node.js** o **Python Flask** para gestionar formularios de contacto o autenticación.
+- Añadir una base de datos como **Firebase** o **MongoDB** para almacenar mensajes o registros.
+- Diseño aún más accesible con soporte para temas oscuro/claro.
+- Versión multilingüe.
 
 ---
 
-© 2025 Imelid Barreto. Todos los derechos reservados.
+**¡Gracias por visitar mi sitio web!** Espero que encuentres útil la información y que disfrutes la experiencia conversacional con **Immy**.
