@@ -28,7 +28,7 @@ La landing page fue diseñada para mostrar de manera clara y profesional quién 
 - **Gestión de Ingreso a la Academia de Aviación** (objetivo personal)
 
 ### 3. Desarrollo y Tecnologías
-- HTML5, CSS3 y JavaScript puro (sin frameworks).
+- HTML5, CSS3 puro.
 - Diseño responsivo, animaciones e interacción personalizada.
 - Asistente virtual *Immy* con síntesis de voz.
 - Publicación en GitHub Pages.
@@ -48,7 +48,6 @@ La landing page fue diseñada para mostrar de manera clara y profesional quién 
 ## 🔧 Herramientas Utilizadas
 
 - Visual Studio Code
-- Figma (wireframes)
 - GitHub Pages (despliegue)
 - ChatGPT y Gemini (contenido y revisión)
 - Canva (CV visual)
