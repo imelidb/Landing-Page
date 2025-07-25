@@ -1,43 +1,98 @@
 
-# Portafolio Profesional con Asistente Virtual IA
+# 🌐 Landing Page Profesional - Imelid Barreto
 
-Bienvenido a mi landing page personal, una plataforma desarrollada con el objetivo de presentar mi perfil profesional, habilidades, proyectos y ofrecer asistencia personalizada a través de un agente conversacional llamado **Immy**.
-
-## 🌟 Visión y Valor que Aporta
-
-Esta landing page busca ser más que una simple tarjeta de presentación: representa una plataforma interactiva donde los visitantes pueden conocer mi experiencia profesional, explorar mis proyectos destacados y contactar conmigo de forma directa y dinámica.
-
-Gracias a **Immy**, un asistente IA amigable, los usuarios pueden obtener respuestas inmediatas, recomendaciones y una guía general sobre el contenido de la página. Esto mejora significativamente la experiencia de usuario, fomentando una interacción moderna y accesible.
-
-## 🛠️ Tecnologías Utilizadas
-
-### Frontend
-- **HTML5**
-- **CSS3** (con animaciones y diseño responsive)
-- **JavaScript** (para interactividad básica)
-
-### Backend
-- No se ha implementado un backend dinámico para esta versión estática.
-
-### Base de Datos
-- No aplica en esta versión.
-
-### Inteligencia Artificial
-- **Agente Virtual "Immy"** integrado con comportamiento conversacional basado en texto, simulando asistencia personalizada.
-
-## ⚠️ Limitaciones Actuales
-
-- El asistente IA **no está conectado a un motor conversacional real** (como OpenAI, Dialogflow o similares), sino que simula interacciones básicas.
-- El sitio funciona de forma estática, por lo que no hay almacenamiento persistente ni funcionalidades de backend.
-
-## 🚀 Mejoras Futuras
-
-- Integrar un chatbot real con IA (API de OpenAI, Gemini, etc.).
-- Implementar backend con **Node.js** o **Python Flask** para gestionar formularios de contacto o autenticación.
-- Añadir una base de datos como **Firebase** o **MongoDB** para almacenar mensajes o registros.
-- Diseño aún más accesible con soporte para temas oscuro/claro.
-- Versión multilingüe.
+Este repositorio contiene el código fuente de mi **landing page profesional**, desarrollada como parte de un ejercicio de identidad digital, branding personal y portafolio web.
 
 ---
 
-**¡Gracias por visitar mi sitio web!** Espero que encuentres útil la información y que disfrutes la experiencia conversacional con **Immy**.
+## 📌 Descripción del Proyecto
+
+La landing page fue diseñada para mostrar de manera clara y profesional quién soy, qué sé hacer y en qué proyectos he trabajado. Sirve como carta de presentación digital e incluye:
+- Sección **Sobre mí** y visión profesional.
+- **Habilidades técnicas y blandas**.
+- Un **portafolio con 3 proyectos clave** (formación, profesional y personal).
+- Un **asistente virtual interactivo** llamado *Immy*.
+- Un **botón en el panel de navegación** para **visualizar y descargar mi CV completo**.
+
+---
+
+## Fases del Proyecto
+
+### 1. Conceptualización y Diseño
+- Marca personal centrada en la innovación tecnológica, eficiencia y transformación social.
+- Paleta de colores profesionales basada en azules profundos.
+
+### 2. Selección de Proyectos
+- **SmartRecruiter** (IA + reclutamiento)
+- **Presupuesto Extraordinario** (análisis fiscal)
+- **Gestión de Ingreso a la Academia de Aviación** (objetivo personal)
+
+### 3. Desarrollo y Tecnologías
+- HTML5, CSS3 y JavaScript puro (sin frameworks).
+- Diseño responsivo, animaciones e interacción personalizada.
+- Asistente virtual *Immy* con síntesis de voz.
+- Publicación en GitHub Pages.
+
+---
+
+## 🎨 Paleta de Colores Utilizada
+
+- `#4727CE`
+- `#351DB8`
+- `#2313A3`
+- `#120A8E`
+- `#000079`
+
+---
+
+## 🔧 Herramientas Utilizadas
+
+- Visual Studio Code
+- Figma (wireframes)
+- GitHub Pages (despliegue)
+- ChatGPT y Gemini (contenido y revisión)
+- Canva (CV visual)
+
+---
+
+## 📂 Estructura del Repositorio
+
+```
+├── index.html
+├── style.css
+├── README.md
+```
+
+---
+
+## ✅ Funcionalidades Especiales
+
+- 🎥 Animación estilo “digital rain”
+- 🤖 Chatbot con voz (Immy)
+- 📝 **Botón en el menú para descargar el CV completo**
+- 📱 Diseño responsive
+
+---
+
+## 📎 Enlaces
+
+- 🌐 **Página publicada:** [https://imelidb.github.io/Landing-Page/](https://imelidb.github.io/Landing-Page/)
+- 📄 **Visualizar CV:** [Enlace directo al CV](https://www.canva.com/design/DAGuL1HH8x8/Nek8usZ5wplgDTLr3zUDvQ/edit?utm_content=DAGuL1HH8x8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+---
+
+## 🙋‍♀️ Sobre Mí
+
+**Imelid Barreto García**  
+Ingeniera en Informática  
+Apasionada por la innovación, la planificación estratégica y el desarrollo de soluciones que transformen realidades.
+
+---
+
+## 📫 Contacto
+
+- WhatsApp: [Enviar mensaje](https://api.whatsapp.com/send?phone=584129790235)
+- GitHub: [@imelidb](https://github.com/imelidb)
+- LinkedIn: [Imelid Barreto](https://www.linkedin.com/in/imelid-barreto-garcía-341470249/)
+
+---
