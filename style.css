@@ -206,6 +206,62 @@ nav a:hover::after {
     background-color: var(--accent2);
 }
 
+/* --- Skills Section --- */
+
+/* Contenedor en dos columnas adaptables */
+.skills-grid-barra {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Cada grupo de habilidades */
+  .skill-group {
+    background: #f8f8f8;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-group h3 {
+    margin-bottom: 15px;
+    color: #120A8E;
+    font-size: 18px;
+  }
+  
+  /* Cada habilidad individual */
+  .skill {
+    margin-bottom: 15px;
+  }
+  
+  .skill span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  /* Barra base */
+  .skill-bar {
+    width: 100%;
+    height: 25px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Barra de relleno (animada) */
+  .skill-fill {
+    width: 0; /* empieza vacía para animarse */
+    height: 100%;
+    background: #120A8E;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 25px;
+    border-radius: 10px;
+    transition: width 1.2s ease-in-out;
+  }
 
 /* --- About Section --- */
 #about {
