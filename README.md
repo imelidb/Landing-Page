@@ -50,7 +50,6 @@ La landing page fue diseñada para mostrar de manera clara y profesional quién 
 - Visual Studio Code
 - GitHub Pages (despliegue)
 - ChatGPT y Gemini (contenido y revisión)
-- Canva (CV visual)
 
 ---
 
@@ -60,14 +59,15 @@ La landing page fue diseñada para mostrar de manera clara y profesional quién 
 ├── index.html
 ├── style.css
 ├── README.md
+├── cv_imelid.pdf
 ```
 
 ---
 
-## ✅ Funcionalidades Especiales
+## ✨ Funcionalidades Especiales
 
 - 🎥 Animación estilo “digital rain”
-- 🤖 Chatbot con voz (Immy)
+- 💌 Chatbot con voz (Immy)
 - 📝 **Botón en el menú para descargar el CV completo**
 - 📱 Diseño responsive
 
@@ -76,7 +76,7 @@ La landing page fue diseñada para mostrar de manera clara y profesional quién 
 ## 📎 Enlaces
 
 - 🌐 **Página publicada:** [https://imelidb.github.io/Landing-Page/](https://imelidb.github.io/Landing-Page/)
-- 📄 **Visualizar CV:** [Enlace directo al CV](https://www.canva.com/design/DAGuL1HH8x8/Nek8usZ5wplgDTLr3zUDvQ/edit?utm_content=DAGuL1HH8x8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- 📄 **Visualizar CV:** [Enlace directo al CV](https://imelidb.github.io/Landing-Page/cv_imelid.pdf)
 
 ---
 
