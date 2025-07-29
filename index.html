@@ -22,7 +22,7 @@
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#portfolio">Portafolio</a></li>
                     <li><a href="#contact">Contacto</a></li>
-                    <li><a href="cv_imelid.pdf" target="_blank">Descargar CV</a></li>
+                    <li><a href="https://www.canva.com/design/DAGuL1HH8x8/Nek8usZ5wplgDTLr3zUDvQ/edit?utm_content=DAGuL1HH8x8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Descargar CV</a></li>
                 </ul>
             </nav>
         </div>
@@ -67,48 +67,118 @@
             </div>
         </section>
 
-        <section id="skills" class="content-section">
-            <div class="container">
-                <h2>Habilidades Técnicas</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Lenguajes de Programación</h3>
-                        <ul>
-                            <li>JavaScript/TypeScript</li>
-                            <li>C++</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Herramientas</h3>
-                        <ul>
-                            <li>Jira & Confluence</li>
-                            <li>Canva</li>
-                            <li>Paquete Office</li>
-                            <li>Slack & NotebookLM</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Idiomas</h3>
-                        <ul>
-                            <li>Español (Nativo)</li>
-                            <li>Inglés</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Soft skills</h3>
-                        <ul>
-                            <li>Redacciòn</li>
-                            <li>Adaptabilidad</li>
-                            <li>Flexilidad</li>
-                            <li>Gestiòn de Tiempo</li>
-                            <li>Anàlisis</li>
-                            <li>Planificaciòn</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <section id="skills" class="content-section">
+  <div class="container">
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills-grid-barra">
+
+      <!-- Lenguajes de Programación -->
+      <div class="skill-group">
+        <h3>Lenguajes de Programación</h3>
+        <div class="skill">
+          <span>JavaScript/TypeScript</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="80%">80%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>C++</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="65%">65%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>HTML</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="90%">90%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Herramientas -->
+      <div class="skill-group">
+        <h3>Herramientas</h3>
+        <div class="skill">
+          <span>Canva</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="95%">95%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Paquete Office</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="90%">90%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Jira & Confluence</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="75%">75%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Slack & NotebookLM</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="70%">70%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Idiomas -->
+      <div class="skill-group">
+        <h3>Idiomas</h3>
+        <div class="skill">
+          <span>Español (Nativo)</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="100%">100%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Inglés</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="70%">70%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-group">
+        <h3>Soft Skills</h3>
+        <div class="skill">
+          <span>Redacción</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="85%">85%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Planificación</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="80%">80%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Gestión de Tiempo</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="85%">85%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Adaptabilidad</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="90%">90%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Análisis</span>
+          <div class="skill-bar">
+            <div class="skill-fill fill" data-width="75%">75%</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
         <section id="portfolio" class="content-section">
             <div class="container">
@@ -323,7 +393,23 @@
       }
     }
   </script>
-  
+ 
+ <script>
+  function animateSkillsOnScroll() {
+    const fills = document.querySelectorAll('.fill');
+    fills.forEach(fill => {
+      const rect = fill.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+      if (isVisible && !fill.classList.contains('animated')) {
+        fill.style.width = fill.getAttribute('data-width');
+        fill.classList.add('animated');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animateSkillsOnScroll);
+  window.addEventListener('load', animateSkillsOnScroll);
+</script>
 
 </body>
 </html>
