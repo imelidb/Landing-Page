@@ -1,415 +1,431 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imelid Barreto - Ingeniera en Informática</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome para íconos de redes sociales -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+/* --- Variables & General Styles --- */
+:root {
+    --primary: #000079;
+    --secondary: #120A8E;
+    --accent1: #4727CE;
+    --accent2: #c8bbf8;
+    --text-light: #ffffff;
+    --text-dark: #333;
+    --bg-light: #fdf6fd;
+    --bg-dark: #2c2c2c;
+}
 
-    <header>
-        <div class="container">
-            <div class="logo">Imelid Barreto</div>
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre Mí</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#portfolio">Portafolio</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                    <li><a href="https://www.canva.com/design/DAGuL1HH8x8/Nek8usZ5wplgDTLr3zUDvQ/edit?utm_content=DAGuL1HH8x8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Descargar CV</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <main>
-        <section id="hero">
-            <canvas id="digitalCanvas"></canvas>
-            <div class="hero-content">
-                <h1>Imelid Barreto</h1>
-                <p>Ingeniera en Informática | Apasionada por la innovación y la tecnología</p>
-                <a href="#portfolio" class="cta-button">Ver mis Proyectos</a>
-            </div>
-        </section>        
-        
+html {
+    scroll-behavior: smooth;
+}
 
-        <section id="about" class="content-section">
-            <div class="container">
-                <h2>Sobre Mí</h2>
-                <div class="about-image">
-                    <img src="https://64.media.tumblr.com/50b11ff132a2922ba8d67da262382e1c/759298f571acfd85-1f/s1280x1920/ae140b4819e76f231b3af912f735506788ce1713.png" alt="Imelid Barreto - Foto profesional">
-                </div>                
-                <p class="about-bio"><p>Nacida el 24 de mayo de 2001 en Ciudad Bolívar, Venezuela. </p>
-            <p>Me apasiona el desarrollo de soluciones tecnológicas que generen un impacto positivo en las personas, organizaciones y comunidades. Mi enfoque profesional está orientado a la innovación, la eficiencia y la mejora continua de los procesos, aplicando la tecnología como una herramienta transformadora.</p>
-                
-                <div class="about-details">
-                    <div class="about-card">
-                        <h3>Visión Profesional</h3>
-                        <p>Busco aplicar mis conocimientos en el desarrollo de soluciones tecnológicas eficientes que impulsen la mejora continua y la transformación digital en cualquier organización.</p>
-                    </div>
-                    <div class="about-card">
-                        <h3>Áreas de Especialización</h3>
-                        <p>Cuento con experiencia en presupuesto público, auditoría administrativa y sistematización de proyectos, combinando la gestión con la tecnología.</p>
-                    </div>
-                    <div class="about-card">
-                        <h3>Títulos Obtenidos</h3>
-                        <p><strong>Ingeniera en Informática</strong><br>Universidad Politécnica Territorial del estado Bolívar (UPTEB) (Dic. 2024)</p>
-                        <p><strong>T.S.U en Informática</strong><br>Universidad Politécnica Territorial del estado Bolívar (UPTEB) (Dic. 2021)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
 
-       <section id="skills" class="content-section">
-  <div class="container">
-    <h2>Habilidades Técnicas</h2>
-    <div class="skills-grid-barra">
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
 
-      <!-- Lenguajes de Programación -->
-      <div class="skill-group">
-        <h3>Lenguajes de Programación</h3>
-        <div class="skill">
-          <span>JavaScript/TypeScript</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="80%">80%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>C++</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="65%">65%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>HTML</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="90%">90%</div>
-          </div>
-        </div>
-      </div>
+h1, h2, h3 {
+    font-weight: 600;
+    color: var(--primary);
+}
 
-      <!-- Herramientas -->
-      <div class="skill-group">
-        <h3>Herramientas</h3>
-        <div class="skill">
-          <span>Canva</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="95%">95%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>Paquete Office</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="90%">90%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>Jira & Confluence</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="75%">75%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>Slack & NotebookLM</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="70%">70%</div>
-          </div>
-        </div>
-      </div>
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
-      <!-- Idiomas -->
-      <div class="skill-group">
-        <h3>Idiomas</h3>
-        <div class="skill">
-          <span>Español (Nativo)</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="100%">100%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>Inglés</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="70%">70%</div>
-          </div>
-        </div>
-      </div>
+.content-section {
+    padding: 6rem 0;
+}
 
-      <!-- Soft Skills -->
-      <div class="skill-group">
-        <h3>Soft Skills</h3>
-        <div class="skill">
-          <span>Redacción</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="85%">85%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>Planificación</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="80%">80%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>Gestión de Tiempo</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="85%">85%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>Adaptabilidad</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="90%">90%</div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>Análisis</span>
-          <div class="skill-bar">
-            <div class="skill-fill fill" data-width="75%">75%</div>
-          </div>
-        </div>
-      </div>
+/* --- Header & Navigation --- */
+header {
+    background-color: rgba(231, 235, 253, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--accent2);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
 
-    </div>
-  </div>
-</section>
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-        <section id="portfolio" class="content-section">
-            <div class="container">
-                <h2>Portafolio de Proyectos</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-card">
-                        <div class="project-image">
-                            <img src="https://cdn-icons-png.flaticon.com/512/6387/6387969.png" alt="Captura del proyecto de control de proyectos con IA" width="200" height="200">
-                        </div>
-                        <h3>SmartRecruiter</h3>
-                        <p class="project-type">Formación</p>
-                        <p>SmartRecruiter es nuestro proyecto de plataforma inteligente de reclutamiento personalizado, diseñado para ayudar a las empresas a encontrar candidatos ideales mediante inteligencia artificial.</p>
-                        <p><strong>Rol:</strong> Gestor(a) de Proyecto</p>
-                        <div class="technologies">
-                            <span>ChatGPT</span><span>Gemini</span><span>Jira</span><span>Confluence</span><span>Canva</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="project-image">
-                            <img src="https://cdnl.iconscout.com/lottie/premium/thumb/presupuesto-5679684-4729820.gif" alt="Proyecto 2" width="200" height="200">
-                        </div>
-                        <h3>Presupuesto Extraordinario para la Contraloría Municipal</h3>
-                        <p class="project-type">Profesional</p>
-                        <p>Elaboración y sustentación de una solicitud de crédito adicional, basada en un análisis presupuestario detallado y el marco normativo de finanzas públicas venezolanas.</p>
-                        <p><strong>Rol:</strong> Analista y redactor principal.</p>
-                        <div class="technologies">
-                            <span>Excel</span><span>Word</span><span>Gestión Pública</span><span>Legislación</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="project-image">
-                            <img src="https://png.pngtree.com/png-clipart/20250602/original/pngtree-blue-and-white-airplane-vector-illustration-png-image_21115229.png" alt="Gestión de Ingreso a la Academia de Aviación" width="200" height="200"> <!-- SUSTITUYE ESTA RUTA POR LA DE TU IMAGEN DE PROYECTO 3 -->
-                        </div>
-                        <h3>Gestión de Ingreso a la Academia de Aviación "Corona`s Pilot"</h3>
-                        <p class="project-type">Personal</p>
-                        <p>Proceso de gestión para formarme como Despachadora de Vuelo, aplicando conocimientos técnicos en meteorología, navegación y normativa aeronáutica.</p>
-                        <p><strong>Rol:</strong> Aspirante.</p>
-                        <div class="technologies">
-                            <span>Investigación</span><span>INAC</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
 
-        <section id="contact" class="content-section">
-            <div class="container">
-                <h2>Contacto</h2>
-                <p>Si tienes una idea, no dudes en contactarme.</p>
-            <p><b>¡Hagamosla Realidad!</b></p>
-                <div class="contact-links">
-                    <a href="https://api.whatsapp.com/send?phone=584129790235" target="_blank" class="contact-button">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a href="https://github.com/imelidb" target="_blank" class="contact-button">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="www.linkedin.com/in/imelid-barreto-garcía-341470249" target="_blank" class="contact-button">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
+/* Mejora espacio del nav */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Imelid Barreto. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
 
-<script>
-        // Digital rain-like animation with white elements
-        const canvas = document.getElementById('digitalCanvas');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        
-        // Configuration for digital rain effect
-        const CHAR_COUNT = 100;
-        const CHARS = "01█▓▒░¦║╗╝╚╔╣╩╦╠═╬ $¢£¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ";
-        const SPEED = 2;
-        
-        // Create columns of falling characters
-        const columns = [];
-        const colWidth = 20;
-        for(let i = 0; i < Math.floor(canvas.width / colWidth); i++) {
-            columns[i] = {
-                x: i * colWidth,
-                y: -100,
-                chars: [],
-                speed: 5 + Math.random() * 10,
-                nextUpdate: 0,
-                updateRate: 5 + Math.random() * 20
-            };
-        }
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
 
-        function updateColumns() {
-            columns.forEach(col => {
-                if(col.y > canvas.height) {
-                    col.y = -20 - Math.random() * 100;
-                } else {
-                    col.y += col.speed * 0.1;
-                }
-                col.nextUpdate--;
-                if(col.nextUpdate <= 0) {
-                    col.chars = [];
-                    for(let i = 0; i < 5 + Math.random() * 10; i++) {
-                        col.chars.push({
-                            char: CHARS[Math.floor(Math.random() * CHARS.length)],
-                            brightness: Math.random()
-                        });
-                    }
-                    col.nextUpdate = col.updateRate;
-                }
-            });
-        }
+nav a:hover {
+    color: var(--primary);
+}
 
-        function drawColumns() {
-            ctx.fillStyle = "rgba(18, 10, 142, 0.05)"; // color #120A8E;
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            
-            ctx.font = '16px monospace';
-            columns.forEach(col => {
-                col.chars.forEach((c, i) => {
-                    const y = col.y + (i * 20);
-                    if(y > 0 && y < canvas.height) {
-                        const alpha = (i / col.chars.length) * 0.8 + 0.2;
-                        ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
-                        ctx.fillText(c.char, col.x, y);
-                    }
-                });
-            });
-        }
+nav a:hover::after {
+    width: 100%;
+}
 
-        function animate() {
-            updateColumns();
-            drawColumns();
-            requestAnimationFrame(animate);
-        }
-
-        animate();
-
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        });
-    </script>
-
-<!-- Asistente Immy -->
-<div id="immy-chatbot" style="position: fixed; bottom: 30px; left: 30px; z-index: 1000;">
-    <img src="https://i.pinimg.com/originals/4b/06/e3/4b06e393fd0647c265b1282b0f006486.gif"
-         alt="Immy" width="80" style="cursor: pointer; border-radius: 50%;" onclick="toggleImmy()" />
-    <div id="immy-box" style="display: none; margin-top: 10px; background: #fff; border: 1px solid #ccc; border-radius: 12px; padding: 15px; width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-      <div style="font-weight: bold; color: #120A8E;">Immy</div>
-      <div id="immy-response" style="margin: 10px 0; font-size: 14px;">Hola, soy Immy y estoy para ayudarte</div>
-      <input type="text" id="immy-input" placeholder="Escribe tu pregunta..." style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #aaa;" onkeydown="if(event.key==='Enter')immyRespond()" />
-      <button onclick="immyRespond()" style="margin-top: 8px; background-color: #120A8E; color: white; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer;">Enviar</button>
-      <div id="immy-whatsapp" style="margin-top: 10px; display: none;">
-        <a href="https://wa.me/584129790235" target="_blank" style="text-decoration: none; color: white; background-color: #25D366; padding: 8px 10px; border-radius: 6px; display: inline-block;">💬 Contactar a la Ing. Imelid Barreto</a>
-      </div>
-    </div>
-  </div>
-  
-  <script>
-    function toggleImmy() {
-      const box = document.getElementById("immy-box");
-      if (box.style.display === "none") {
-        box.style.display = "block";
-        speakImmy("Hola, soy Immy y estoy para ayudarte");
-      } else {
-        box.style.display = "none";
-      }
+/* --- Responsive Navigation --- */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
     }
-  
-    function immyRespond() {
-      const input = document.getElementById("immy-input").value.toLowerCase();
-      const responseBox = document.getElementById("immy-response");
-      const whatsappBox = document.getElementById("immy-whatsapp");
-  
-      const groserias = ["mierda", "puta", "carajo", "coño", "joder", "imbécil", "maldita", "maldito"];
-      if (groserias.some(p => input.includes(p))) {
-        responseBox.textContent = "Lo siento, no puedo responder ese tipo de mensajes 🛑";
-        speakImmy("Lo siento, no puedo responder ese tipo de mensajes");
-        return;
-      }
-  
-      if (input.includes("quién es imelid") || input.includes("imelid") || input.includes("barreto")) {
-        responseBox.textContent = "Imelid Barreto García es ingeniera y especialista en el área de control fiscal, presupuesto y tecnología. ¿Deseas saber más?";
-        speakImmy("Imelid Barreto García es ingeniera y especialista. ¿Deseas saber más?");
-      } else if (input.includes("proyecto") || input.includes("portafolio")) {
-        responseBox.textContent = "Puedes ver los proyectos destacados en la sección 'Mis Proyectos'.";
-        speakImmy("Puedes ver los proyectos destacados");
-      } else if (input.includes("no sé") || input.includes("otra cosa") || input.includes("ayuda personal") || input.includes("fuera de tema")) {
-        responseBox.textContent = "Parece que tu pregunta no está relacionada con esta página. ¿Quieres contactar directamente con la Ing. Imelid Barreto?";
-        whatsappBox.style.display = "block";
-        speakImmy("¿Quieres contactar con la ingeniera Imelid Barreto?");
-      } else {
-        responseBox.textContent = "Gracias por tu pregunta. Estoy procesando la respuesta o puedes contactar directamente con la Ing. Imelid Barreto.";
-        whatsappBox.style.display = "block";
-        speakImmy("Gracias por tu pregunta");
-      }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
     }
-  
-    function speakImmy(text) {
-      if ('speechSynthesis' in window) {
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.voice = speechSynthesis.getVoices().find(voice => voice.name.includes("Google español") || voice.name.includes("Microsoft Sabina"));
-        utterance.pitch = 1.8;
-        utterance.rate = 0.95;
-        speechSynthesis.speak(utterance);
-      }
+
+    nav ul li {
+        width: 100%;
     }
-  </script>
- 
- <script>
-  function animateSkillsOnScroll() {
-    const fills = document.querySelectorAll('.fill');
-    fills.forEach(fill => {
-      const rect = fill.getBoundingClientRect();
-      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-      if (isVisible && !fill.classList.contains('animated')) {
-        fill.style.width = fill.getAttribute('data-width');
-        fill.classList.add('animated');
-      }
-    });
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+}
+
+
+/* --- Hero Section --- */
+#hero {
+    background-color: #1C31A5;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px; /* Offset for fixed header */
+    overflow: hidden;
+}
+
+#digitalCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    max-width: 800px;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--text-light);
+    color: var(--primary);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    background-color: var(--accent2);
+}
+
+/* --- Skills Section --- */
+
+/* Contenedor en dos columnas adaptables */
+.skills-grid-barra {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Cada grupo de habilidades */
+  .skill-group {
+    background: #f8f8f8;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-group h3 {
+    margin-bottom: 15px;
+    color: #120A8E;
+    font-size: 18px;
+  }
+  
+  /* Cada habilidad individual */
+  .skill {
+    margin-bottom: 15px;
+  }
+  
+  .skill span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  /* Barra base */
+  .skill-bar {
+    width: 100%;
+    height: 25px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Barra de relleno (animada) */
+  .skill-fill {
+    width: 0; /* empieza vacía para animarse */
+    height: 100%;
+    background: #120A8E;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 25px;
+    border-radius: 10px;
+    transition: width 1.2s ease-in-out;
   }
 
-  window.addEventListener('scroll', animateSkillsOnScroll);
-  window.addEventListener('load', animateSkillsOnScroll);
-</script>
+/* --- About Section --- */
+#about {
+    background-color: var(--text-light);
+}
+.about-bio {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.1rem;
+}
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.about-card {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 5px solid var(--secondary);
+}
+.about-card h3 {
+    margin-bottom: 1rem;
+}
+.about-image {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
-</body>
-</html>
+.about-image img {
+    width: 200px;          /* Tamaño fijo adecuado para perfil */
+    height: 200px;
+    object-fit: cover;     /* Para que la imagen no se distorsione */
+    border-radius: 50%;    /* Para que sea redonda */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border: 4px solid var(--primary);
+}
+
+/* --- Skills Section --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+.skill-category h3 {
+    margin-bottom: 1rem;
+}
+.skill-category ul {
+    list-style: none;
+}
+.skill-category li {
+    background: var(--accent2);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+/* --- Portfolio Section --- */
+#portfolio {
+    background-color: var(--text-light);
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+.portfolio-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.portfolio-card h3 {
+    margin-bottom: 0.5rem;
+}
+.project-type {
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.portfolio-card p {
+    flex-grow: 1;
+}
+.technologies {
+    margin-top: 1.5rem;
+}
+.technologies span {
+    background-color: var(--primary);
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Contact Section --- */
+#contact {
+    text-align: center;
+    background-color: var(--bg-light);
+}
+#contact p {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.contact-button {
+    background: var(--primary);
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.contact-button:hover {
+    background: var(--secondary);
+    transform: scale(1.05);
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    header .container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    nav ul {
+        justify-content: center;
+        width: 100%;
+    }
+}
